@@ -2,7 +2,7 @@ package com.myporfolio.fpb.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-public class dtoEducacion {
+public class dtoProyecto {
     @NotBlank
     private String nombreE;
     @NotBlank
@@ -10,10 +10,10 @@ public class dtoEducacion {
 
     //Contructor
     
-    public dtoEducacion() {
+    public dtoProyecto() {
     }
 
-    public dtoEducacion(String nombreE, String descripcionE) {
+    public dtoProyecto(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }

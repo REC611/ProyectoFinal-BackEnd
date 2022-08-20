@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Educacion {
+public class Proyecto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -15,16 +15,14 @@ public class Educacion {
 
     //Constructor 
     
-    public Educacion() {
+    public Proyecto() {
     }
 
-    public Educacion(String nombreE, String descripcionE) {
+    public Proyecto(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
 
-    //Getter && Setter
-            
     public int getId() {
         return id;
     }
